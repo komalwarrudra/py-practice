@@ -22,3 +22,19 @@ A classic CLI-based game where the user competes against the computer.
     *   Limits the player to 7 attempts.
     *   Provides "Too High" or "Too Low" feedback.
     *   Includes a "Play Again" loop to restart the game without exiting the script.
+
+# Persistent Task Manager (CLI)
+
+A Python-based To-Do List application that uses JSON for data persistence, ensuring tasks are saved across sessions.
+
+## 🚀 Features
+- **Data Persistence:** Uses the `json` library to store tasks in a local file (`task.json`).
+- **Error Resilience:** Implements `try/except` blocks to handle missing files or corrupted data.
+- **Full CRUD Logic:** Supports Adding, Viewing, and Removing tasks with automatic index handling.
+- **Formatted Storage:** Saves data with indentation for better readability.
+
+## 🛠️ Technical Concepts
+*   **File I/O:** Reading from and writing to local files using Python's `with open()` context managers.
+*   **JSON Serialization:** Converting Python lists into JSON format for storage.
+*   **Exception Handling:** Managing `FileNotFoundError`, `JSONDecodeError`, and `ValueError`.
+*   **List Manipulation:** Using `enumerate()` for user-friendly indexing and `pop()` for item removal.
